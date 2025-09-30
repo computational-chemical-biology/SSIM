@@ -1,0 +1,23 @@
+name: chemwalker
+channels:
+  - conda-forge
+  - rdkit
+  - bioconda
+  - defaults
+dependencies:
+  - openjdk>=18, <=20
+  - pip>=23.2
+  - python>=3.10
+  - rdkit
+  - setuptools
+  - pip:
+    - click
+    - ipython
+    - networkx
+    - pyteomics==4.7.2
+    - requests
+    - scikit-learn>=1.3.0
+    - urllib3
+    - xmltodict
+    - zipp
+    - csvkit

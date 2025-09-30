@@ -1,0 +1,50 @@
+1 - Mostrar jupyter/vscode/colab
+    https://docs.google.com/document/d/1YjMat1INI744VCaB98MPTyLFlSdOI0iD2f0g_I_Cmlg/edit?usp=sharing
+    
+2 - pyOpenMS - feat finding - comparison
+     Navegar bancos de dados gnps
+     https://massive.ucsd.edu/ProteoSAFe/dataset.jsp?task=f7f946a3c5f64d40a84881ccbeff2cc4
+3 - GNPS2 - web interface, user accounts
+4 - matchms - networking/library search
+5 - Banco de transformações
+     https://biotransformer.ca/queries/114124
+     
+     # https://massql-analysis.gnps2.org/MassQL_Chatbot
+
+'write me a query that finds MS2 spectroa with a 227 m/z peak'
+
+QUERY scaninfo(MS2DATA) WHERE MSPROD=227.0
+
+'add 10ppm tolerance'
+
+QUERY scaninfo(MS2DATA) WHERE MS2PROD=227.0:TOLERANCEPPM=10
+
+please also look for 229 m/z
+
+QUERY scaninfo(MS2DATA) WHERE MS2PROD=227.0:TOLERANCEPPM=10 AND MS2PROD=229.0:TOLERANCEPPM=10
+
+format this better
+
+QUERY scaninfo(MS2DATA) WHERE 
+MS2PROD=227.0:TOLERANCEPPM=10 AND 
+MS2PROD=229.0:TOLERANCEPPM=10
+
+also look for 300, 301, 302 m/z but require at least 2 of those peaks in the spectrum
+
+QUERY scaninfo(MS2DATA) WHERE 
+MS2PROD=227.0:TOLERANCEPPM=10 AND 
+MS2PROD=229.0:TOLERANCEPPM=10 AND 
+MS2PROD=(300.0 OR 301.0 OR 302.0):CARDINALITY=range(min=2, max=5):TOLERANCEPPM=10
+
+add looking for MS1 precursor with a mass defect of around 0.1
+
+QUERY scaninfo(MS2DATA) WHERE 
+MS2PROD=227.0:TOLERANCEPPM=10 AND 
+MS2PROD=229.0:TOLERANCEPPM=10 AND 
+MS2PROD=(300.0 OR 301.0 OR 302.0):CARDINALITY=range(min=2, max=5):TOLERANCEPPM=10 AND 
+MS2PREC=ANY:MASSDEFECT=massdefect(min=0.1, max=0.1)
+
+please explain this query in detail
+
+https://aistudio.google.com/app/api-keys
+
