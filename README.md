@@ -35,10 +35,11 @@ conda env export | grep -v "^prefix: " > environment.yml
 
 ## Index
 
-- [GNPS2 data inspection](./notebooks/gnps2_data_inspection.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/computational-chemical-biology/SSIM/blob/master/notebooks/gnps2_data_inspection.ipynb)
-- [pyOpenMS](./notebooks/pyopenms-api.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/computational-chemical-biology/SSIM/blob/master/notebooks/pyopenms-api.ipynb)
-- [Compare pyOpenMS and MZmine](./notebooks/comp_mzmine_pyopenms.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/computational-chemical-biology/SSIM/blob/master/notebooks/comp_mzmine_pyopenms.ipynb)
-- [Format database for ChemWalker](./notebooks/formatdb.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/computational-chemical-biology/SSIM/blob/master/notebooks/formatdb.ipynb)
-- [MassQL](./notebooks/massql.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/computational-chemical-biology/SSIM/blob/master/notebooks/massql.ipynb)
-- [GNPS2 API](./notebooks/gnps-api.ipynb) [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/computational-chemical-biology/SSIM/blob/master/notebooks/gnps-api.ipynb)
+Notebook | Colab link
+[GNPS2 data inspection](./notebooks/gnps2_data_inspection.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/computational-chemical-biology/SSIM/blob/master/notebooks/gnps2_data_inspection.ipynb)
+[pyOpenMS](./notebooks/pyopenms-api.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/computational-chemical-biology/SSIM/blob/master/notebooks/pyopenms-api.ipynb)
+[Compare pyOpenMS and MZmine](./notebooks/comp_mzmine_pyopenms.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/computational-chemical-biology/SSIM/blob/master/notebooks/comp_mzmine_pyopenms.ipynb)
+[Format database for ChemWalker](./notebooks/formatdb.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/computational-chemical-biology/SSIM/blob/master/notebooks/formatdb.ipynb)
+[MassQL](./notebooks/massql.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/computational-chemical-biology/SSIM/blob/master/notebooks/massql.ipynb)
+[GNPS2 API](./notebooks/gnps-api.ipynb) | [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](http://colab.research.google.com/github/computational-chemical-biology/SSIM/blob/master/notebooks/gnps-api.ipynb)
 
