@@ -1,4 +1,4 @@
-import pyopenms.libpyopenms as oms
+import pyopenms as oms
 import os
 
 def getFeatureMaps(mzML_list):
