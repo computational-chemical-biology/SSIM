@@ -5,7 +5,7 @@ import os
 
 #ftp://massive-ftp.ucsd.edu/v02/MSV000083183/
 def downloadMassIVE(massive_url):
-    ftp = ftplib.FTP("massive-ftp.ucsd.edu")
+    ftp = ftplib.FTP_TLS("massive-ftp.ucsd.edu")
     ftp.login('anonymous', 'password')
     dr = re.sub('.+edu/(v\d+/M.+)', '\\1', massive_url)
     ftp.cwd(dr)
